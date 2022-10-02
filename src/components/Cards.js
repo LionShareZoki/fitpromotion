@@ -14,13 +14,13 @@ const Cards = () => {
               src={image}
               text="Explore the hidden waterfall deep inside the Amazon jungle"
               label="adventure"
-              path="/online/coaching"
+              path="/online/trening"
             />
             <CardItem
               src={image}
               text="Explore the hidden waterfall deep inside the Amazon jungle"
               label="adventure"
-              path="/online/coaching"
+              path="/online/trening"
             />
           </ul>
           <ul className="cards__items">
@@ -28,19 +28,19 @@ const Cards = () => {
               src={image}
               text="Explore the hidden waterfall deep inside the Amazon jungle"
               label="adventure"
-              path="/online/coaching"
+              path="/online/trening"
             />
             <CardItem
               src={image}
               text="Explore the hidden waterfall deep inside the Amazon jungle"
               label="adventure"
-              path="/online/coaching"
+              path="/online/trening"
             />
             <CardItem
               src={image}
               text="Explore the hidden waterfall deep inside the Amazon jungle"
               label="adventure"
-              path="/online/coaching"
+              path="/online/trening"
             />
           </ul>
         </div>

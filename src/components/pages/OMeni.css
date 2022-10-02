@@ -1,0 +1,182 @@
+.wrapper {
+  background-color: rgb(31, 31, 31);
+
+  height: 90vh;
+  width: 100%;
+  overscroll-behavior: contain;
+}
+.wrapper::before {
+  content: "";
+  position: absolute;
+  height: 90vh;
+  width: 100%;
+
+  background: linear-gradient(#2196f3, #e91e63);
+  clip-path: circle(15% at 10% 10%);
+}
+.leftt {
+  height: 90vh;
+  left: 0px;
+  position: absolute;
+  width: 50%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* font-family: "Franklin Gothic Medium"; */
+}
+
+.rightt {
+  height: 90vh;
+  right: 0px;
+  position: absolute;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image--holder {
+  margin-right: 25px;
+  margin-left: 40px;
+  margin-top: 15px;
+  margin-left: 15px;
+  max-width: 80%;
+  max-height: 100%;
+}
+.image {
+  max-width: 100%;
+  max-height: 100%;
+  bottom: 0px;
+}
+.container {
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  display: grid;
+  grid-auto-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+}
+.card {
+  margin-top: 35%;
+  vertical-align: middle;
+  width: 400px;
+  height: 350px;
+  border-radius: 15px;
+  transition: transform 500ms ease-out;
+  overflow: hidden;
+  color: #fff;
+  padding: 5%;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(30px);
+  border: rgba(255, 255, 255, 0.1);
+}
+.h5 {
+  font-size: 25px;
+  margin-bottom: 30px;
+  color: rgba(255, 255, 255, 0.7);
+}
+.text {
+  font-size: 17px;
+  line-height: 1.9;
+  color: rgba(255, 255, 255, 0.7);
+}
+.link {
+  border: none;
+  background-color: #fff;
+  padding: 15px 50px;
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 15px;
+}
+.container .card::before {
+  content: "";
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 60%;
+  height: 100%;
+  top: 0%;
+  left: -125%;
+  transform: skew(45deg);
+  position: absolute;
+  animation-direction: left;
+  transition-duration: 500ms;
+}
+
+.container .card:hover {
+  transform: translateY(-5%);
+}
+
+.container .card:hover::before {
+  left: 150%;
+}
+
+@media screen and (max-width: 700px) {
+  .leftt {
+    position: relative;
+  }
+  .rightt {
+    position: absolute;
+    bottom: 0px;
+  }
+}
+/* .container {
+  border-radius: 55px;
+  border: 2px solid white;
+
+  position: relative;
+  width: 90%;
+  height: 50%;
+  display: grid;
+}
+.card {
+  border-radius: 55px;
+  border: 2px solid white;
+
+  position: relative;
+  width: 90%;
+  height: 50%;
+  display: grid;
+}
+.content {
+  display: grid;
+}
+.h5 {
+  margin-top: 4%;
+  margin-bottom: 4%;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  font-weight: bolder;
+}
+.text {
+  text-align: center;
+  margin-left: 25px;
+  margin-right: 25px;
+  color: white;
+  font-size: 15px;
+  margin-bottom: 8%;
+  font-weight: normal;
+  text-transform: none;
+}
+.link {
+  font-weight: bolder;
+  margin: auto;
+  margin-bottom: 5%;
+  /* text-align: center; */
+/* border-radius: 5px;
+  text-decoration: none;
+  padding: 13px;
+  background-color: white;
+  display: inline-block;
+} */
+/* margin-left: 39%;
+  margin-right: 39%; */
+
+/* .link:hover {
+  background-color: transparent;
+  color: white;
+  transition: all 0.3s ease-out;
+} */
