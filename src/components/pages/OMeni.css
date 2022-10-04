@@ -12,8 +12,11 @@
   width: 100%;
 
   background: linear-gradient(#2196f3, #e91e63);
-  clip-path: circle(15% at 10% 10%);
+  clip-path: circle(30% at 15% 10%);
 }
+/* .directions {
+  /* height: 100%; 
+} */
 .leftt {
   height: 90vh;
   left: 0px;
@@ -58,7 +61,7 @@
   grid-gap: 30px;
 }
 .card {
-  margin-top: 35%;
+  margin-top: 20%;
   vertical-align: middle;
   width: 400px;
   height: 350px;
@@ -80,7 +83,7 @@
 .text {
   font-size: 17px;
   line-height: 1.9;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgb(255, 255, 255);
 }
 .link {
   border: none;
@@ -112,14 +115,70 @@
 .container .card:hover::before {
   left: 150%;
 }
-
+.heading1 {
+  position: relative;
+  vertical-align: middle;
+  text-align: center;
+  margin-top: 10%;
+  font-size: xxx-large;
+  font-weight: 900;
+  color: white;
+}
+.heading {
+  /* position: relative;
+  top: -40%;
+  font-size: xxx-large;
+  font-weight: 900;
+  color: white; */
+  display: none;
+}
 @media screen and (max-width: 700px) {
+  .wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .heading1 {
+    display: none;
+  }
+  .heading {
+    display: contents;
+    color: white;
+    font-size: xx-large;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    font-weight: 900;
+  }
+  .wrapper::before {
+    display: none;
+  }
   .leftt {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    height: auto;
+    width: 100%;
     position: relative;
   }
   .rightt {
-    position: absolute;
-    bottom: 0px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    height: auto;
+    position: relative;
+    width: 100%;
+  }
+  .image--holder {
+    margin: auto;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: block;
+  }
+  .card {
+    margin: auto;
+    display: block;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
   }
 }
 /* .container {
