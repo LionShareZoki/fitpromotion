@@ -2,35 +2,45 @@ import "./OMeni.css";
 import { Link } from "react-router-dom";
 import ivan from "../../imgs/deadlift.png";
 import Button from "../Button";
+import Footer from "../Footer";
 
 const OMeni = () => {
   return (
-    <div className="wrapper">
-      {/* <div className="heading">IVAN RAJČIĆ</div> */}
+    <div>
+      <div className="wrapper">
+        {/* <div className="heading">IVAN RAJČIĆ</div> */}
 
-      <div className="leftt">
-        <div className="heading1">IVAN RAJČIĆ</div>
-        <div className="container">
-          <div className="card">
-            <div className="content">
-              {/* <h5 className="h5">IVAN RAJČIĆ</h5> */}
-              <div className="text">
-                Lorem ipsum odor amet, consectetuer adipiscing elit. Donec
-                taciti enim potenti dictumst maecenas tortor. Quam cursus varius
-                fames ut non sagittis. Ex a himenaeos senectus imperdiet neque.
+        <div className="leftt">
+          <div className="heading1">IVAN RAJČIĆ</div>
+          <div className="container">
+            <div className="card">
+              <div className="content">
+                {/* <h5 className="h5">IVAN RAJČIĆ</h5> */}
+                <div className="text">
+                  Moje ime je Ivan Rajčić i kondicijski sam trener. Bavim se
+                  sportom od malih nogu, a svoju ljubav prema treniranju i
+                  inspiriranju okoline pretvorio sam u životni stil. Završio sam
+                  trogodišnji studij za kondicijsku pripremu sportaša na
+                  Kineziološkom fakultetu Sveučilišta u Splitu. Iako sam cijeli
+                  svoj život posvetio sportu i treniranju sebe, osjetio sam
+                  poziv da pomognem što većem broju ljudi koji se bore sa
+                  skidanjem viška kilograma, dobivanjem mišićne mase i
+                  poboljšanju zdravstvenog stanja.
+                </div>
+                <Button>KONTAKTIRAJ ME</Button>
               </div>
-              <Button>KONTAKTIRAJ ME</Button>
             </div>
           </div>
         </div>
-      </div>
 
-      <div className="rightt">
-        <div className="image--holder">
-          <img src={ivan} alt="Ivan's photo" className="image" />
+        <div className="rightt">
+          <div className="image--holder">
+            <img src={ivan} alt="Ivan's photo" className="image" />
+          </div>
         </div>
+        <div className="heading">IVAN RAJČIĆ</div>
       </div>
-      <div className="heading">IVAN RAJČIĆ</div>
+      <Footer />
     </div>
   );
 };

@@ -1,7 +1,13 @@
 import "../../App.css";
+import Footer from "../Footer";
 
 const PrivatniTrening = () => {
-  return <h1 className="privatni--trening">Privatni Trening</h1>;
+  return (
+    <div>
+      <div className="wrapper">Privatni Trening</div>
+      <Footer />
+    </div>
+  );
 };
 
 export default PrivatniTrening;
