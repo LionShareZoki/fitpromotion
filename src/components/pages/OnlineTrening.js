@@ -5,6 +5,12 @@ import "./OnlineTrening.css";
 import Footer from "../Footer";
 import Rectangle from "../Rectangle";
 import Arrow from "../../imgs/arrow.png";
+import Square from "../Square";
+import app1 from "../../imgs/app1.png";
+import app2 from "../../imgs/app2.png";
+import app3 from "../../imgs/app3.png";
+import app4 from "../../imgs/app4.png";
+import VerticalRectangle from "../VerticalRectangle";
 
 const OnlineTrening = (props) => {
   return (
@@ -36,7 +42,7 @@ const OnlineTrening = (props) => {
             </div>
             <div className="text-content">
               <h2 className="heading4">INICIJALNI UPITNIK</h2>
-              <h2 className="text2">
+              <h2 className="text5">
                 Prije samog početka suradnje ispunjavaš inicijalni upitnik koji
                 će mi pružiti sve potrebne informacije da bih za tebe izradio
                 optimalan program treninga i odabrao primjere prehrane, nužne za
@@ -59,6 +65,69 @@ const OnlineTrening = (props) => {
         </div>
         <div className="training--benefits">
           <h2 className="heading2">POSLJEDICE TRENINGA</h2>
+          <div className="row">
+            <Square text="Bolji san" />
+            <Square text="Veće samopouzdanje" />
+            <Square text="Mogućnost kontaktiranja 24/7" />
+            <Square text="Dinamični trening" />
+          </div>
+          <div className="row">
+            <Square text="Trening" />
+            <Square text="Trening" />
+            <Square text="Trening" />
+            <Square text="Trening" />
+          </div>
+          <div className="row">
+            <Square text="Trening" />
+            <Square text="Trening" />
+            <Square text="Trening" />
+            <Square text="Trening" />
+          </div>
+        </div>
+
+        <div className="mobile--app">
+          <h1 className="heading2">APLIKACIJA ZA TRENING</h1>
+          <div className="row">
+            <div className="holder-for-image">
+              <h4 className="text5">S lakoćom prati svoje dnevne obveze</h4>
+              <img className="app--img" src={app1} />
+            </div>
+            <div className="holder-for-image">
+              <h4 className="text5">
+                Pristupi svom treningu i planu prehrane bilo gdje
+              </h4>
+              <img className="app--img" src={app2} />
+            </div>
+            <div className="holder-for-image">
+              <h4 className="text5">
+                Postavi ciljeve trening i prehrane sa svojim trenerom
+              </h4>
+              <img className="app--img" src={app3} />
+            </div>
+            <div className="holder-for-image">
+              <h4 className="text5">
+                Radite sa svojim trenerom kako biste postigli ciljeve
+              </h4>
+              <img className="app--img" src={app4} />
+            </div>
+          </div>
+          <div className="holder-for-text">
+            <h5 className="text5">
+              Aplikacija “FitProMotion” dostupna je svim aktivnim online
+              klijentima, a preko nje dobivaš personalizirani program treninga s
+              brojem ponavljanja, radnim opterećenjem i brojem radnih serija u
+              odnosu na tvoje ciljeve i na opremu s kojom raspolažeš. Da bismo
+              smanjili mogućnost krivog izvođenja, za svaku vježbu dobivaš i
+              video instrukcije.
+            </h5>
+          </div>
+        </div>
+        <div className="price--list">
+          <div className="row">
+            <VerticalRectangle />
+            <VerticalRectangle />
+            <VerticalRectangle />
+          </div>
         </div>
       </div>
 
