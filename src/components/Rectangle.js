@@ -9,6 +9,7 @@ const Rectangle = (props) => {
   return (
     <div className="container1">
       <Link className={click ? "card1" : "card1--active"} onClick={handleClick}>
+        <div>{props.image}</div>
         <div className="heading3">{props.heading}</div>
         <div className={click ? "text1" : "text1--active"}>{props.text}</div>
         <div className="down-up">

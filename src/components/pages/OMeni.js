@@ -3,8 +3,9 @@ import { Link } from "react-router-dom";
 import ivan from "../../imgs/deadlift.png";
 import Button from "../Button";
 import Footer from "../Footer";
+import { useNavigate } from "react-router-dom";
 
-const OMeni = () => {
+const OMeni = (props) => {
   return (
     <div>
       <div className="wrapper">
@@ -27,7 +28,13 @@ const OMeni = () => {
                   skidanjem viška kilograma, dobivanjem mišićne mase i
                   poboljšanju zdravstvenog stanja.
                 </div>
-                <Button>KONTAKTIRAJ ME</Button>
+
+                <a
+                  href="https://www.facebook.com"
+                  class="btn btn--primary btn--large"
+                >
+                  UPOZNAJ ME
+                </a>
               </div>
             </div>
           </div>

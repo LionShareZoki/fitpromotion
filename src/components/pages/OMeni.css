@@ -71,9 +71,9 @@
   color: #fff;
   padding: 5%;
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(108, 108, 108, 0.2);
   backdrop-filter: blur(30px);
-  border: rgba(255, 255, 255, 0.1);
+  border: rgba(69, 69, 69, 0.1);
 }
 .h5 {
   font-size: 25px;
@@ -135,6 +135,22 @@
   color: white; */
   display: none;
 }
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
 @media screen and (max-width: 700px) {
   .wrapper {
     height: 100%;
@@ -187,6 +203,7 @@
     height: 540px;
   }
 }
+
 /* .container {
   border-radius: 55px;
   border: 2px solid white;
