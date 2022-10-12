@@ -123,10 +123,28 @@ const OnlineTrening = (props) => {
           </div>
         </div>
         <div className="price--list">
+          <h2 className="heading2">CJENIK USLUGA</h2>
           <div className="row">
-            <VerticalRectangle />
-            <VerticalRectangle />
-            <VerticalRectangle />
+            <VerticalRectangle
+              name="LITE"
+              price="67 €"
+              timeInterval="1 mjesec"
+            />
+            <VerticalRectangle
+              name="PREMIUM"
+              price="147 €"
+              timeInterval="3 mjeseca"
+            />
+            <VerticalRectangle
+              name="GOLD"
+              price="247 €"
+              timeInterval="6 mjeseci"
+            />
+            <VerticalRectangle
+              name="DIAMOND"
+              price="447 €"
+              timeInterval="12 mjeseci"
+            />
           </div>
         </div>
       </div>

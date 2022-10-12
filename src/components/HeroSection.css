@@ -75,6 +75,7 @@ video {
   margin-left: 4px;
 }
 .photo--arrows {
+  display: none;
   opacity: 80%;
   max-width: 100vh;
   max-height: 100vh;

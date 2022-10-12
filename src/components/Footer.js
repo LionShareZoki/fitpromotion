@@ -2,35 +2,75 @@ import React from "react";
 import "./Footer.css";
 import { Button } from "./Button";
 import { Link } from "react-router-dom";
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
+import logo from "../imgs/logo.png";
 
 function Footer() {
+  const form = useRef();
+  const sendEmail = (e) => {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        "service_6cmnqfg",
+        "template_psnhl4a",
+        form.current,
+        "ZfH3606IJV_WciB6p"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
+  };
   return (
     <div className="footer-container">
       <section className="footer-subscription">
         <p className="footer-subscription-heading">
-          Join the Adventure newsletter to receive our best vacation deals
+          Ukoliko imaš pitanje, pošalji upit.
         </p>
         <p className="footer-subscription-text">
-          You can unsubscribe at any time.
+          Odgovaram u najkraćem mogućem roku.
         </p>
         <div className="input-areas">
-          <form>
+          <form ref={form} onSubmit={sendEmail}>
+            <div className="name-email">
+              {" "}
+              <input
+                className="footer-input"
+                name="user_name"
+                type="text"
+                placeholder="Ime"
+              />{" "}
+              <input
+                className="footer-input"
+                name="user_email"
+                type="email"
+                placeholder="Vaš Email"
+              />{" "}
+            </div>
             <input
-              className="footer-input"
-              name="email"
-              type="email"
-              placeholder="Your Email"
-            />
-            <Button buttonStyle="btn--outline">Subscribe</Button>
+              className="footer-input-question"
+              name="question"
+              type="text"
+              placeholder="Pitanje"
+            />{" "}
+            <button className="button-submit" type="submit">
+              Pošalji
+            </button>{" "}
           </form>
         </div>
       </section>
       <div class="footer-links">
         <div className="footer-link-wrapper">
           <div class="footer-link-items">
-            <h2>About Us</h2>
-            <Link to="/sign-up">How it works</Link>
-            <Link to="/">Testimonials</Link>
+            <h2>O meni</h2>
+            <Link to="/omeni">Upoznaj me</Link>
+            {/* <Link to="/">Testimonials</Link> */}
           </div>
           <div class="footer-link-items">
             <h2>Contact Us</h2>
@@ -39,9 +79,9 @@ function Footer() {
         </div>
         <div className="footer-link-wrapper">
           <div class="footer-link-items">
-            <h2>Social Media</h2>
-            <Link to="/">Instagram</Link>
-            <Link to="/">Facebook</Link>
+            <h2>Mreže</h2>
+            <a href="https://www.instagram.com/ivan_rajcic/">Instagram</a>
+            <a href="https://www.facebook.com/Fitpromotion.hr">Facebook</a>
           </div>
         </div>
       </div>
@@ -49,11 +89,10 @@ function Footer() {
         <div class="social-media-wrap">
           <div class="footer-logo">
             <Link to="/" className="social-logo">
-              TRVL
-              <i class="fab fa-typo3" />
+              <img className="logo" src={logo} />
             </Link>
           </div>
-          <small class="website-rights">TRVL © 2020</small>
+          <small class="website-rights">FitProMotion © 2022</small>
           <div class="social-icons">
             <Link
               class="social-icon-link facebook"
@@ -63,6 +102,7 @@ function Footer() {
             >
               <i class="fab fa-facebook-f" />
             </Link>
+            <div className="empty-space">em</div>
             <Link
               class="social-icon-link instagram"
               to="/"

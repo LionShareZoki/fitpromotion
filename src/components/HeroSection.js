@@ -14,7 +14,7 @@ const HeroSection = () => {
       <div className="left">
         {/* <img src={ivan} /> */}
 
-        <h1 className="h1">DRINA</h1>
+        <h1 className="h1">BUDI FIT</h1>
         <div className="hero--btns">
           <Link to="/online/trening">
             <Button
