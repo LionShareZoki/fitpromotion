@@ -11,6 +11,18 @@ import app2 from "../../imgs/app2.png";
 import app3 from "../../imgs/app3.png";
 import app4 from "../../imgs/app4.png";
 import VerticalRectangle from "../VerticalRectangle";
+import dream from "../../imgs/dream.png";
+import lifeQuality from "../../imgs/life-quality.png";
+import advices from "../../imgs/advices.png";
+import app from "../../imgs/aplikacija.png";
+import change from "../../imgs/change.png";
+import food from "../../imgs/food.png";
+import goals from "../../imgs/goals.png";
+import jump from "../../imgs/jump.png";
+import plan from "../../imgs/plan.png";
+import training from "../../imgs/training.png";
+import video from "../../imgs/video.png";
+import whatsapp from "../../imgs/whatsapp.png";
 
 const OnlineTrening = (props) => {
   return (
@@ -40,48 +52,62 @@ const OnlineTrening = (props) => {
             <div className="img--holder1">
               <img src={Arrow} />
             </div>
-            <div className="text-content">
-              <h2 className="heading4">INICIJALNI UPITNIK</h2>
-              <h2 className="text5">
-                Prije samog početka suradnje ispunjavaš inicijalni upitnik koji
-                će mi pružiti sve potrebne informacije da bih za tebe izradio
-                optimalan program treninga i odabrao primjere prehrane, nužne za
-                ostvarenje tvojih ciljeva.
-              </h2>
-            </div>
-            <div className="button-container">
-              <a
-                className="botun"
-                href="https://docs.google.com/forms/d/e/1FAIpQLSfFWgVobIWZ-OuyUQFSM_bhxkJ9l5Nx4RcOnwulBKr6CItsXQ/viewform"
-                class="btn btn--primary btn--large"
-              >
-                ISPUNI UPITNIK
-              </a>
+            <div className="middle-questionaire">
+              <div className="text-content">
+                <h2 className="heading4">INICIJALNI UPITNIK</h2>
+                <h2 className="text5">
+                  Prije samog početka suradnje ispunjavaš inicijalni upitnik
+                  koji će mi pružiti sve potrebne informacije da bih za tebe
+                  izradio optimalan program treninga i odabrao primjere
+                  prehrane, nužne za ostvarenje tvojih ciljeva.
+                </h2>
+              </div>
+              <div className="button-container">
+                <a
+                  class="botun"
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSfFWgVobIWZ-OuyUQFSM_bhxkJ9l5Nx4RcOnwulBKr6CItsXQ/viewform"
+                  // class="btn btn--primary btn--large"
+                >
+                  ISPUNI UPITNIK
+                </a>
+              </div>
             </div>
             <div className="img--holder2">
-              <img src={Arrow} />
+              <img src={Arrow} className="arrow-image" />
             </div>
           </div>
         </div>
         <div className="training--benefits">
-          <h2 className="heading2">POSLJEDICE TRENINGA</h2>
+          <h2 className="heading2">ŠTO DOBIVAŠ?</h2>
           <div className="row">
-            <Square text="Bolji san" />
-            <Square text="Veće samopouzdanje" />
-            <Square text="Mogućnost kontaktiranja 24/7" />
-            <Square text="Dinamični trening" />
+            <Square text="Bolji san" icon={dream} />
+            <Square text="Unaprjeđenje kvalitete života" icon={lifeQuality} />
+            <Square text="Više energije kroz dan" icon={jump} />
+            <Square
+              text="Znanje o planiranju treninga i prehrane"
+              icon={plan}
+            />
           </div>
           <div className="row">
-            <Square text="Trening" />
-            <Square text="Trening" />
-            <Square text="Trening" />
-            <Square text="Trening" />
+            <Square text="Korištenje aplikacije 'FitProMotion'" icon={app} />
+            <Square text="Video instrukcije za svaku vježbu" icon={video} />
+            <Square
+              text="Promjenu programa treninga u slučaju potrebe"
+              icon={change}
+            />
+            <Square
+              text="Praćenje rezultata i postavljanje ciljeva za svaki novi tjedan"
+              icon={goals}
+            />
           </div>
           <div className="row">
-            <Square text="Trening" />
-            <Square text="Trening" />
-            <Square text="Trening" />
-            <Square text="Trening" />
+            <Square text="Personalizirani program trenigna" icon={training} />
+            <Square text="Primjere raznovrsne prehrane" icon={food} />
+            <Square
+              text="Savjete o prehrani, korištenju dodataka prehrani i treningu"
+              icon={advices}
+            />
+            <Square text="Podršku 24/7 preko whatsappa" icon={whatsapp} />
           </div>
         </div>
 

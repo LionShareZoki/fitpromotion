@@ -140,6 +140,25 @@
   width: 100%;
   height: 300px;
 }
+.middle-questionaire {
+  justify-content: center;
+}
+.botun {
+  color: white;
+  /* margin-left: 75px; */
+  font-family: "PT Sans", sans-serif;
+
+  padding: 8px 20px;
+  border-radius: 2px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.botun:hover {
+  background: #fff;
+  color: #242424;
+  transition: all 0.3s ease-out;
+}
 .card2 {
   margin-bottom: 50px;
   display: flex;
@@ -163,32 +182,36 @@
   font-weight: 300;
 }
 .button-container {
-  width: 500px;
-  float: right;
+  margin-bottom: 10px;
+  width: 100%;
+  align-self: center;
   /* margin-right: 100px; */
   vertical-align: middle;
 }
 .img--holder1 {
-  transform: scale(1, 1.65);
+  /* transform: scale(1, 0.8); */
   opacity: 80%;
   max-width: 100%;
   max-height: 100%;
 }
 .img--holder2 {
-  transform: scale(1, 1.65) rotate(180deg);
+  transform: rotate(180deg);
   opacity: 80%;
 
   max-width: 100%;
   max-height: 100%;
 }
+.arrow-image {
+  max-height: 100%;
+}
 .heading4 {
   color: white;
   font-size: xx-large;
-  font-weight: 450;
+  font-weight: 550;
   margin-bottom: 20px;
 }
 .text-content {
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   display: block;
 }
 /* .training--benefits {
@@ -213,17 +236,18 @@
   padding: 8px;
   text-align: center;
   width: 300px;
-  height: 300px;
+  height: 250px;
 }
+
 .card3 {
   padding: 8px;
-  width: 80%;
-  height: 80%;
+  width: 100%;
+  height: 95%;
   transition-duration: 700ms;
   position: relative;
-  display: flex;
-  /* align-items: center; */
-  margin-top: 13%;
+  display: block;
+  align-items: center;
+  margin-top: 12%;
   /* vertical-align: middle; */
 
   border-radius: 15px;
@@ -234,6 +258,24 @@
   background-color: rgba(108, 108, 108, 0.2);
   backdrop-filter: blur(30px);
   border: rgba(108, 108, 108, 0.1);
+}
+.text-holder {
+  text-align: center;
+  text-transform: uppercase;
+}
+.icon-image {
+  width: 100px;
+  height: 100px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+.p1 {
+  color: #b1dcff;
+  font-size: small;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 .holder-for-image {
   margin-top: 30px;
@@ -254,7 +296,7 @@
   margin-bottom: 80px;
 }
 .text5 {
-  padding: 10px;
+  padding: 20px;
   color: white;
   font-size: larger;
   font-weight: 200;
@@ -318,4 +360,89 @@
 .plan-time {
   font-size: small;
   margin-bottom: 40px;
+}
+
+@media screen and (max-width: 820px) {
+  .wrapper1 {
+    box-sizing: border-box;
+    height: 1290vh;
+    max-width: 100%;
+  }
+  .card1 {
+    width: 350px;
+  }
+  .card1--active {
+    width: 350px;
+    height: 280px;
+  }
+  .text1--active {
+    width: 300px;
+    height: 700px;
+  }
+  .down-up {
+    height: 35px;
+  }
+  .heading3 {
+    top: 17px;
+  }
+  .arrow-down {
+    top: 11px;
+  }
+  .img--holder2 {
+    display: none;
+  }
+  .img--holder1 {
+    display: none;
+  }
+  .card2 {
+    width: 100%;
+    height: 100%;
+    display: block;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+  }
+  .text-content {
+    margin-bottom: 0%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .text5 {
+    padding: 5%;
+  }
+  .initial--questionnaire {
+    margin-bottom: 40px;
+  }
+  .heading4 {
+    margin-top: 35px;
+    margin-bottom: 0.1px;
+    font-size: x-large;
+    font-weight: 700;
+  }
+  .button-container {
+    align-items: center;
+    align-content: center;
+    text-align: center;
+  }
+  .botun {
+    color: white;
+    /* margin-left: 75px; */
+    font-family: "PT Sans", sans-serif;
+
+    /* padding: 8px 20px; */
+    border-radius: 2px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+  }
+  .row {
+    display: block;
+  }
+  .holder-for-image {
+    align-self: center;
+    width: 100%;
+    float: none;
+    margin: 0;
+  }
 }

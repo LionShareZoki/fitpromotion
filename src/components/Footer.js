@@ -67,14 +67,14 @@ function Footer() {
       </section>
       <div class="footer-links">
         <div className="footer-link-wrapper">
-          <div class="footer-link-items">
+          {/* <div class="footer-link-items">
             <h2>O meni</h2>
             <Link to="/omeni">Upoznaj me</Link>
-            {/* <Link to="/">Testimonials</Link> */}
-          </div>
+         
+          </div> */}
           <div class="footer-link-items">
-            <h2>Contact Us</h2>
-            <Link to="/">Contact</Link>
+            <h2>Kontakt</h2>
+            <Link to="/">+385 98 555</Link>
           </div>
         </div>
         <div className="footer-link-wrapper">
@@ -94,23 +94,24 @@ function Footer() {
           </div>
           <small class="website-rights">FitProMotion © 2022</small>
           <div class="social-icons">
-            <Link
+            <a
+              href="https://www.facebook.com/Fitpromotion.hr"
               class="social-icon-link facebook"
-              to="/"
               target="_blank"
               aria-label="Facebook"
             >
               <i class="fab fa-facebook-f" />
-            </Link>
+            </a>
             <div className="empty-space">em</div>
-            <Link
+            <a
+              href="https://www.instagram.com/ivan_rajcic/"
               class="social-icon-link instagram"
               to="/"
               target="_blank"
               aria-label="Instagram"
             >
               <i class="fab fa-instagram" />
-            </Link>
+            </a>
           </div>
         </div>
       </section>
