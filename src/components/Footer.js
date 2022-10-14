@@ -89,7 +89,7 @@ function Footer() {
         <div class="social-media-wrap">
           <div class="footer-logo">
             <Link to="/" className="social-logo">
-              <img className="logo" src={logo} />
+              <img className="logo" src={logo} alt="" />
             </Link>
           </div>
           <small class="website-rights">FitProMotion © 2022</small>

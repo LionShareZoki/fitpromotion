@@ -50,7 +50,7 @@ const OnlineTrening = (props) => {
         <div className="initial--questionnaire">
           <div className="card2">
             <div className="img--holder1">
-              <img src={Arrow} />
+              <img src={Arrow} alt="" />
             </div>
             <div className="middle-questionaire">
               <div className="text-content">
@@ -73,7 +73,7 @@ const OnlineTrening = (props) => {
               </div>
             </div>
             <div className="img--holder2">
-              <img src={Arrow} className="arrow-image" />
+              <img src={Arrow} className="arrow-image" alt="" />
             </div>
           </div>
         </div>
@@ -116,25 +116,25 @@ const OnlineTrening = (props) => {
           <div className="row">
             <div className="holder-for-image">
               <h4 className="text5">S lakoćom prati svoje dnevne obveze</h4>
-              <img className="app--img" src={app1} />
+              <img className="app--img" src={app1} alt="" />
             </div>
             <div className="holder-for-image">
               <h4 className="text5">
                 Pristupi svom treningu i planu prehrane bilo gdje
               </h4>
-              <img className="app--img" src={app2} />
+              <img className="app--img" src={app2} alt="" />
             </div>
             <div className="holder-for-image">
               <h4 className="text5">
                 Postavi ciljeve trening i prehrane sa svojim trenerom
               </h4>
-              <img className="app--img" src={app3} />
+              <img className="app--img" src={app3} alt="" />
             </div>
             <div className="holder-for-image">
               <h4 className="text5">
                 Radite sa svojim trenerom kako biste postigli ciljeve
               </h4>
-              <img className="app--img" src={app4} />
+              <img className="app--img" src={app4} alt="" />
             </div>
           </div>
           <div className="holder-for-text">
