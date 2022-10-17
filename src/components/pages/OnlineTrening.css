@@ -1,9 +1,12 @@
 .wrapper1 {
   background-color: rgb(31, 31, 31);
   overflow-x: hidden;
-  height: 515vh;
+  /* height: 515vh; */
   width: 100%;
   overscroll-behavior: inherit;
+  display: block;
+  box-sizing: border-box;
+  overflow: auto;
 }
 .wrapper1::before {
   overflow-x: hidden;
@@ -377,6 +380,7 @@
 } */
 @media screen and (max-width: 820px) {
   .wrapper1 {
+    /* height: 1300vh; */
     display: block;
     box-sizing: border-box;
     overflow: auto;
