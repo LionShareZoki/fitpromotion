@@ -361,11 +361,26 @@
   font-size: small;
   margin-bottom: 40px;
 }
-
+/* @media only screen and (min-device-width: 370px) and (max-device-width: 409px) {
+  .wrapper1 {
+    height: 1290vh;
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+}
+@media only screen and (min-device-width: 410px) and (max-device-width: 480px) {
+  .wrapper1 {
+    height: 980vh;
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+} */
 @media screen and (max-width: 820px) {
   .wrapper1 {
+    display: block;
     box-sizing: border-box;
-    height: 1290vh;
+    overflow: auto;
+    /* height: 1290vh; */
     max-width: 100%;
   }
   .card1 {

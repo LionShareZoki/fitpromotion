@@ -1,5 +1,5 @@
 import "./OMeni.css";
-import { Link } from "react-router-dom";
+// import { Link } from "react-scroll";
 import ivan from "../../imgs/deadlift.png";
 import Button from "../Button";
 import Footer from "../Footer";
@@ -29,12 +29,7 @@ const OMeni = (props) => {
                   poboljšanju zdravstvenog stanja.
                 </div>
 
-                <a
-                  href="https://www.facebook.com"
-                  class="btn btn--primary btn--large"
-                >
-                  UPOZNAJ ME
-                </a>
+                <a class="btn btn--primary btn--large">KONTAKTIRAJ ME</a>
               </div>
             </div>
           </div>
@@ -51,5 +46,4 @@ const OMeni = (props) => {
     </div>
   );
 };
-
 export default OMeni;

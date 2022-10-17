@@ -28,7 +28,7 @@ function Footer() {
     e.target.reset();
   };
   return (
-    <div className="footer-container">
+    <div className="footer-container" id="footer">
       <section className="footer-subscription">
         <p className="footer-subscription-heading">
           Ukoliko imaš pitanje, pošalji upit.
