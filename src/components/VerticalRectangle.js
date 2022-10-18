@@ -4,7 +4,7 @@ const VerticalRectangle = (props) => {
   return (
     <div className="ver-box">
       <div className="ver-card">
-        <h1 className="fitpro">FitProMotion</h1>
+        <h1 className="fitpro">Fitpromotion</h1>
 
         <div className="plan-name">{props.name}</div>
         <div className="plan-price">{props.price}</div>

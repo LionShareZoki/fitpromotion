@@ -334,7 +334,7 @@
   background-image: linear-gradient(
     to bottom right,
     rgba(0, 0, 0, 0.308),
-    rgba(0, 34, 107, 0.808)
+    rgb(0, 81, 255)
   );
   backdrop-filter: blur(30px);
   border: rgba(108, 108, 108, 0.1);

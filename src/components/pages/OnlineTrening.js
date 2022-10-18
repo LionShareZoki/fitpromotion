@@ -161,13 +161,13 @@ const OnlineTrening = (props) => {
               price="147 €"
               timeInterval="3 mjeseca"
             />
-            <VerticalRectangle
+            {/* <VerticalRectangle
               name="GOLD"
               price="247 €"
               timeInterval="6 mjeseci"
-            />
+            /> */}
             <VerticalRectangle
-              name="DIAMOND"
+              name="GOLD"
               price="447 €"
               timeInterval="12 mjeseci"
             />
