@@ -78,7 +78,9 @@ const OnlineTrening = (props) => {
           </div>
         </div>
         <div className="training--benefits">
-          <h2 className="heading2">ŠTO DOBIVAŠ?</h2>
+          <div className="row">
+            <h2 className="heading2">ŠTO DOBIVAŠ?</h2>
+          </div>
           <div className="row">
             <Square text="Bolji san" icon={dream} />
             <Square text="Unaprjeđenje kvalitete života" icon={lifeQuality} />
@@ -155,11 +157,13 @@ const OnlineTrening = (props) => {
               name="LITE"
               price="67 €"
               timeInterval="1 mjesec"
+              Link="https://checkout.stripe.com/c/pay/cs_live_a1vt3Uhx00OMPG92uFUp0s11hME2p3InpboWnwSJF7ljoNlF4Hgv6dLnpK#fidkdWxOYHwnPyd1blppbHNgWjA0SXBPfEtJdkZTb2Q8dXJBfTx9Tl9nf2IyZ1QwUmlQZExrXUdBVlM1aF9JSWE2TW1Ac1Q0TjUyb1U9NlFtbDRyTnRibUFLaTdNSEhNQHF0MWZyPHJLaGZsNTVvZGRDdDZtPScpJ3VpbGtuQH11anZgYUxhJz8nY19gN2dmZE5kMHZQMX18MG5uJ3gl"
             />
             <VerticalRectangle
               name="PREMIUM"
               price="147 €"
               timeInterval="3 mjeseca"
+              Link="https://checkout.stripe.com/c/pay/cs_live_a1n5B9qhHuVlT3lfln0pOZQS5enEcZgGpS0DUxz39XbrGm2hRrN86PNBdD#fidkdWxOYHwnPyd1blppbHNgWjA0SXBPfEtJdkZTb2Q8dXJBfTx9Tl9nf2IyZ1QwUmlQZExrXUdBVlM1aF9JSWE2TW1Ac1Q0TjUyb1U9NlFtbDRyTnRibUFLaTdNSEhNQHF0MWZyPHJLaGZsNTVvZGRDdDZtPScpJ3VpbGtuQH11anZgYUxhJz8nNDFuYF1cMWlINT1ENW1sYFBTJ3gl"
             />
             {/* <VerticalRectangle
               name="GOLD"
@@ -170,6 +174,7 @@ const OnlineTrening = (props) => {
               name="GOLD"
               price="447 €"
               timeInterval="12 mjeseci"
+              Link="https://buy.stripe.com/00g8zA9G65sU2pq8wy"
             />
           </div>
         </div>

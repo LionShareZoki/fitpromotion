@@ -74,7 +74,7 @@ function Footer() {
           </div> */}
           <div class="footer-link-items">
             <h2>Kontakt</h2>
-            <Link to="/">+385 98 555</Link>
+            <Link to="/">+385 97 663 1919</Link>
           </div>
         </div>
         <div className="footer-link-wrapper">

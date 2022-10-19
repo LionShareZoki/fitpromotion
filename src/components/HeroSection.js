@@ -7,7 +7,7 @@ import ivan from "../imgs/ivan.png";
 import arrows from "../imgs/arrows.png";
 import { Link } from "react-router-dom";
 
-const HeroSection = () => {
+const HeroSection = (props) => {
   return (
     <div className="hero-container">
       <video src={video} autoPlay loop muted />

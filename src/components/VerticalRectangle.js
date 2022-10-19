@@ -9,7 +9,7 @@ const VerticalRectangle = (props) => {
         <div className="plan-name">{props.name}</div>
         <div className="plan-price">{props.price}</div>
         <div className="plan-time">{props.timeInterval}</div>
-        <a href={props.Link} class="btn--border btn--border btn--large">
+        <a href={props.Link} class="botun">
           ODABERI
         </a>
       </div>
