@@ -1,0 +1,67 @@
+.wrapper11 {
+  background-color: rgb(31, 31, 31);
+  overflow-x: hidden;
+  /* height: 515vh; */
+  width: 100%;
+  overscroll-behavior: inherit;
+  display: block;
+  box-sizing: border-box;
+  overflow: auto;
+}
+.wrapper11::before {
+  overflow-x: hidden;
+  content: "";
+  position: absolute;
+  height: 90vh;
+  width: 100%;
+
+  background: linear-gradient(#08406d, rgb(31, 31, 31));
+  clip-path: circle(5% at 2% 20%);
+}
+.rectangle {
+  border-radius: 15px;
+  overflow: hidden;
+  color: #fff;
+  padding: 5%;
+
+  background-color: rgba(108, 108, 108, 0.2);
+  -webkit-backdrop-filter: blur(30px);
+  backdrop-filter: blur(30px);
+  border: rgba(108, 108, 108, 0.1);
+}
+.recc {
+  display: flex;
+}
+.l {
+  flex: 1;
+  padding: 5%;
+  color: #92b8ff;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: 500;
+  font-size: x-large;
+  float: left;
+  width: 45%;
+}
+.holding-text {
+  margin-top: 65px;
+  margin-bottom: 65px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.r {
+  flex: 1;
+  float: right;
+  width: 45%;
+  max-height: 100%;
+}
+.imagee-holder {
+  max-height: 100%;
+  max-width: 100%;
+}
+.imagee {
+  overflow-x: hidden;
+  object-fit: fill;
+  max-width: 100%;
+  max-height: 100%;
+}
