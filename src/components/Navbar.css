@@ -101,6 +101,7 @@
     opacity: 1;
     transition: all 0.5s ease;
     z-index: 1;
+    display: block;
   }
 
   .nav-links {
@@ -158,5 +159,9 @@
     background: #fff;
     color: #242424;
     transition: 250ms;
+  }
+  .nav-item {
+    position: relative;
+    vertical-align: top;
   }
 }
