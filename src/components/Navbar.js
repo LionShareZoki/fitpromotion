@@ -50,7 +50,7 @@ function Navbar() {
                 ONLINE TRENING
               </Link>
             </li>
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <Link
                 to="/privatni/trening"
                 className="nav-links"
@@ -58,7 +58,7 @@ function Navbar() {
               >
                 PRIVATNI TRENING
               </Link>
-            </li>
+            </li> */}
 
             {/* <li>
               <Link
