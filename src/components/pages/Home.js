@@ -7,6 +7,7 @@ import Footer from "../Footer";
 const Home = () => {
   return (
     <>
+      whats up
       <HeroSection />
       {/* <Cards /> */}
       <Footer />
