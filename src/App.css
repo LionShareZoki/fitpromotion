@@ -5,6 +5,13 @@
   /* font-family: "PT Sans", sans-serif; */
 }
 
+.hidden {
+  opacity: 0;
+  transition: all 1s;
+}
+.show {
+  opacity: 1;
+}
 .home,
 .services,
 .products,
