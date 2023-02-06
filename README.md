@@ -4,12 +4,12 @@
 
 A custom online personal training platform for clients to purchase personalised fitness programs.
 
-### Technologies used
+###Technologies used
 
 - React JS
   
 
-### Features
+###Features
 
 - Customizable personal training programs
   
@@ -18,7 +18,7 @@ A custom online personal training platform for clients to purchase personalised 
 - Secure payment option using Stripe
   
 
-### Getting started
+###Getting started
 
 1. Clone the repository to your local machine
   
@@ -40,6 +40,6 @@ A custom online personal training platform for clients to purchase personalised 
   ```
   
 
-## Take a glance into the project:
+##Take a glance into the project:
 
 https://fitpromotion.netlify.app/
