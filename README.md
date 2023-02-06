@@ -1,6 +1,45 @@
-This is landing page crated for a personal trainer who provides online training program.
+# FitPromotion
 
-On about me page you can see who he is.
-On online training page you can see the whole process of online training, the benefits of it and also you can purchase one of the programs.
+---
 
-Each page has footer where you can visit his social media and you can also send him a messages on his email.
+A custom online personal training platform for clients to purchase personalised fitness programs.
+
+### Technologies used
+
+- React JS
+  
+
+### Features
+
+- Customizable personal training programs
+  
+- User-friendly interface
+  
+- Secure payment option using Stripe
+  
+
+### Getting started
+
+1. Clone the repository to your local machine
+  
+  ```shell
+  $ git clone https://github.com/LionShareZoki/fitpromotion.git
+  ```
+  
+
+2. Install dependencies
+  
+  ```ruby
+  $ npm install
+  ```
+  
+3. Start the development server
+  
+  ```ruby
+  $ npm start
+  ```
+  
+
+## Take a glance into the project:
+
+https://fitpromotion.netlify.app/
