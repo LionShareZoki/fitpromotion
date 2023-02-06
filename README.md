@@ -43,3 +43,4 @@ A custom online personal training platform for clients to purchase personalised 
 ## Take a glance into the project:
 
 https://fitpromotion.netlify.app/
+![Project image](https://github.com/LionShareZoki/fitpromotion/blob/main/src/imgs/project-screenshot.png)
